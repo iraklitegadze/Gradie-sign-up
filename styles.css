@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+:root{
+ --input-bg-color: #fff;
+--grayish-black: hsl(0, 4%, 62%);
+--dark-greenish-blue: #0f3f50;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+img{
+    max-width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    padding: 1rem 1rem 0 1rem;
+    background-color: var(--dark-greenish-blue);
+}
+
+h1{
+    color: var(--input-bg-color);
+    font-weight: 700;
+}
+
+h2{
+    color: var(--grayish-black);
+    font-weight: 500;
+    font-size: 16px;
+}
+#photo{
+    margin-bottom: -5px;
+}
+.right{
+    text-align: left;
+background-color: #fff;
+    padding: 3rem 3rem 3rem 3rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label{
+    padding: 1.5rem 0 1.5rem 0;
+}
+#email,#pswd{
+    padding: 1rem;
+}
+
+.title{
+    line-height: 3rem;
+}
+
+.right h1{
+    color: black;
+}
+a{
+    color: #0f3f50;
+    font-weight: 700;
+}
+
+#paddinglabel{
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+}
+
+.btn{
+    padding: 1rem 4rem 1rem 3rem;
+    background-color: #0f3f50;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width:768px) {
+    body{
+        padding: 6rem 0 8rem 0;
+        background: url(./Assets/Background.png);
+    }
+  .container{
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .left{
+    padding-top: 3rem;
+  }
+
+  .right{
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+}
+
+@media screen and (min-width:978px) {
+    body{
+        padding: 1rem 0 0.5rem 0;
+        overflow-y: hidden;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        max-width: 60%;
+        overflow-y: hidden;
+    }
+
+
+    .left, .right{
+        width: 50%;
+    }
+
+    
+    
+}
